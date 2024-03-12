@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:qr_scanner/qr_scanner.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+import 'package:mobile_scanner/mobile_scanner.dart';
 
 const bgColor = Color(0xfffafafa);
 
@@ -53,13 +56,24 @@ class QRScanner extends StatelessWidget {
               ),
               Expanded(
                 flex: 4,
-                child: Container(
-                  color: Colors.green,
+                child: MobileScanner(
+                  allowDuplicates: true,
+                  onDetect: (barcode, args){
+                    
+                  },
                 ),
               ),
               Expanded(
                 child: Container(
-                  color: Colors.amber,
+                  alignment: Alignment.center,
+                  child: Text(
+                    "Developed by IfHead",
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontSize: 14,
+                      letterSpacing: 1,
+                    ),
+                  ),
                 ),
               )
             ],
