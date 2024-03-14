@@ -33,7 +33,7 @@ class _ScanQRCodeState extends State<ScanQRCode> {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           SizedBox(
-            height: 30,
+            height: 30, 
           ),
           Text(
             '$qrResult', 
