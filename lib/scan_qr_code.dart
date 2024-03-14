@@ -36,7 +36,7 @@ class _ScanQRCodeState extends State<ScanQRCode> {
             height: 30,
           ),
           Text(
-            '$qrResult',
+            '$qrResult', 
             style: TextStyle(color: Colors.black),
           ),
           SizedBox(
